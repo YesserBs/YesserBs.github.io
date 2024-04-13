@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="#">    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Se connecter</h2>
+    <form id="connexion-form">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <button type="button" onclick="verifierConnexion()">Se Connecter</button>
+    </form>
+        <script src="connexion.js"></script>
+    </div>
+    <a href="inscription.html">S'inscrire</a><br>
+    <div id="messageErreur"></div>
+
+</body>
+</html>

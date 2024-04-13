@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#favorite-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 50px;
+  background-color: transparent;
+  color: black; /* couleur jaune pour l'étoile */
+  border: none;
+  //text-shadow: 0 0 2px black; /* ombre pour créer un contour noir */
+  cursor: pointer;
+}
