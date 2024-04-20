@@ -3,29 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscription.css">
     <title>Inscription</title>
 </head>
 <body>
+    <div class="signup-container">
+
+        <img src="./assets/logo-1.svg" alt="logo">
+        <div class="title">
+            <p>Sign-up to Campy</p>
+        </div>  
+        <button class="sign-google"> <img src="./assets/icon-1.svg" alt="logo google"> Se Connecter avec Google</button>
+
+    <form id="inscription-form">
+        <div class="input-form">
+            <input type="text" id="nom" name="nom" placeholder="Enter your Firstname here" required>
+            <input type="text" id="prenom" name="prenom" placeholder="Enter your Lastname here" required>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email Here" required>
+            <input type="tel" name="tel" id="tel" placeholder="Enter your phone number">
+            <input type="password" id="mdp" name="mdp" placeholder="Enter Your Password Here" required>
+        </div>
+    
+        <div class="accept">
+            <div class="accept-privacy">
+                <input type="checkbox" id="accept-policy" name="accept-policy"><label for="accept-policy">I accept the <a href="#" > Terms of Service</a> & <a href="#" >Privacy Policy</a></label>
+            
+            </div>
+            <div class="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter"><label for="newsletter">I want to receive the Campy newsletter for updates</label>
+            </div>
+
+
+        </div>
+
+
+        <div class="commentaire">
+            <p>
+                By registering, you accept our General Conditions and you acknowledge having read this <a href="#">Privacy Ploicy </a>and <a href="#">Terms & Conditions</a>
+            </p>
+        </div>
+        <button class="inscription-button" type="button" onclick="effectuerInscription()">Regiser</button>
+        <p class="login">Do you already have a Campy account ? <a href="connexion.html">Log in</a></p>
+</div>
+
+    </form>
+</div>
+
+
+
+<script src="inscription.js"></script>
+<!--
+    
     <h1>Inscription</h1>
     <form id="inscription-form">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" required><br>
-
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom" required><br>
-
-        <label for="email">Email :</label>
-        <input type="email" id="email" name="email" required><br>
-
-                <label for="tel">Téléphone :</label>
-        <input type="number" id="tel" name="tel" required><br>
-
-                <label for="mdp">Mot de passe :</label>
-        <input type="password" id="mdp" name="mdp" required><br>
-
-        <button type="button" onclick="effectuerInscription()">S'Inscrire</button>
-    </form>
-    <a href="connexion.html">Se connecter</a>
-    <script src="inscription.js"></script>
+            
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required><br>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="tel">Téléphone :</label>
+            <input type="number" id="tel" name="tel" required><br>
+            
+            <label for="mdp">Mot de passe :</label>
+            <input type="password" id="mdp" name="mdp" required><br>
+            
+            <button type="button" onclick="effectuerInscription()">S'Inscrire</button>
+        </form>
+        <a href="connexion.html">Se connecter</a>
+        <script src="inscription.js"></script>
+    -->
 </body>
+
+    <footer>
+        <div class="footer_up">
+                <div class="foot_item1">
+                    <img src="./assets/LOGO-NAVBAR.svg" alt="logo">
+                    <p>info@camp.com</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos quidem sequi ullam. Animi praesentium velit voluptate repellat</p>
+                </div>
+                <div class="foot_item2">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li>Newsletter</li>
+                        <li>Products</li>
+                        <li>About Us</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="foot_item3">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><p>info@camp.com</p></li>
+                        <li><p>+216 99 999 999</p></li>
+                
+                    </ul>
+                </div>
+                <div class="foot_item4">
+                    <h4>Connect with us</h4>
+                    <ul>
+                        <li><a href=""><img src="./assets/icons8-facebook (1).svg" alt="facebook"></a></li>
+                        <li><a href=""><img src="./assets/icons8-instagram.svg" alt=""></a></li>
+                        <li><a href=""><img src="./assets/x-social-media-round-icon.svg" alt=""></a></li>
+                    
+                    </ul>
+                </div>
+               
+        </div>
+        <div class="footer_down"> 
+            <p>Copyright &COPY; 2024 Campy.tn All Rights Reserved</p>
+        </div>
+
+       
+        
+    </footer>
 </html>
